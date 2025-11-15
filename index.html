@@ -1,409 +1,2581 @@
-<!DOCTYPE HTML>
-<!--
-	Broadcast by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
---><html>
-	<head>
-		<title>Broadcast by TEMPLATED</title>
-		<meta charset="utf-8">
-		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="assets/css/main.css">
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIB - Global Business Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
 
-		<!-- Header -->
-			<header id="header">
-				<h1><a href="#">Broadcast <span>by TEMPLATED</span></a></h1>
-				<a href="#menu">Menu</a>
-			</header>
+        :root {
+            --primary: #1a3a5f;
+            --secondary: #2c5c8a;
+            --accent: #e63946;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --transition: all 0.3s ease;
+        }
 
-		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html">Generic</a></li>
-					<li><a href="elements.html">Elements</a></li>
-				</ul>
-			</nav>
+        body {
+            background-color: #f5f7fa;
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
-			<!-- Banner -->
-			<!--
-				To use a video as your background, set data-video to the name of your video without
-				its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
-				formats to work correctly.
-			-->
-				<section id="banner" data-video="images/banner">
-					<div class="inner">
-						<header>
-							<h1>This is Broadcast</h1>
-							<p>Morbi eu purus eget urna interdum dignissim sed consectetur augue<br>
-							vivamus vitae libero in nulla iaculis eleifend non sit amet nulla.</p>
-						</header>
-						<a href="#main" class="button big alt scrolly">Dignissim</a>
-					</div>
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
 
-				</section>
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-		<!-- Main -->
-			<div id="main">
+        .top-bar {
+            background: var(--primary);
+            color: white;
+            padding: 8px 0;
+            font-size: 0.9rem;
+        }
 
-			<!-- One -->
-				<section class="wrapper style1">
-					<div class="inner">
-						<header class="align-center">
-							<h2>Nam eu nisi non ante sodale</h2>
-							<p>Cras sagittis turpis sit amet est tempus, sit amet consectetur purus tincidunt.</p>
-						</header>
-						<!-- 2 Column Video Section -->
-							<div class="flex flex-2">
-								<div class="video col">
-									<div class="image fit">
-										<img src="images/pic07.jpg" alt="">
-										<div class="arrow">
-											<div class="icon fa-play"></div>
-										</div>
-									</div>
-									<p class="caption">
-										Pellentesque at nunc vitae urna suscipit mollis nec in arcu
-									</p>
-									<a href="generic.html" class="link"><span>Click Me</span></a>
-								</div>
-								<div class="video col">
-									<div class="image fit">
-										<img src="images/pic08.jpg" alt="">
-										<div class="arrow">
-											<div class="icon fa-play"></div>
-										</div>
-									</div>
-									<p class="caption">
-										Morbi mattis ligula ut eros ipsum aliquam iaculis dictum suscipit
-									</p>
-									<a href="generic.html" class="link"><span>Click Me</span></a>
-								</div>
-							</div>
-					</div>
-				</section>
+        .top-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-			<!-- Two -->
-				<section class="wrapper style2">
-					<div class="inner">
-						<header>
-							<h2>Etiam veroeros lorem</h2>
-							<p>Fusce fringilla enim sit amet lectus sollicitudin, eu tincidunt odio semper.</p>
-						</header>
-						<!-- Tabbed Video Section -->
-							<div class="flex flex-tabs">
-								<ul class="tab-list">
-									<li><a href="#" data-tab="tab-1" class="active">Duis vestibulum tellus</a></li>
-									<li><a href="#" data-tab="tab-2">Quam tempus sodales ipsum</a></li>
-									<li><a href="#" data-tab="tab-3">Donec faucibus risus cursus</a></li>
-								</ul>
-								<div class="tabs">
+        .top-bar-contact span {
+            margin-right: 20px;
+        }
 
-									<!-- Tab 1 -->
-										<div class="tab tab-1 flex flex-3 active">
-											<!-- Video Thumbnail -->
-												<div class="video col">
-													<div class="image fit">
-														<img src="images/pic01.jpg" alt="">
-														<div class="arrow">
-															<div class="icon fa-play"></div>
-														</div>
-													</div>
-													<a href="generic.html" class="link"><span>Click Me</span></a>
-												</div>
-											<!-- Video Thumbnail -->
-												<div class="video col">
-													<div class="image fit">
-														<img src="images/pic02.jpg" alt="">
-														<div class="arrow">
-															<div class="icon fa-play"></div>
-														</div>
-													</div>
-													<a href="generic.html" class="link"><span>Click Me</span></a>
-												</div>
-											<!-- Video Thumbnail -->
-												<div class="video col">
-													<div class="image fit">
-														<img src="images/pic03.jpg" alt="">
-														<div class="arrow">
-															<div class="icon fa-play"></div>
-														</div>
-													</div>
-													<a href="generic.html" class="link"><span>Click Me</span></a>
-												</div>
-											<!-- Video Thumbnail -->
-												<div class="video col">
-													<div class="image fit">
-														<img src="images/pic04.jpg" alt="">
-														<div class="arrow">
-															<div class="icon fa-play"></div>
-														</div>
-													</div>
-													<a href="generic.html" class="link"><span>Click Me</span></a>
-												</div>
-											<!-- Video Thumbnail -->
-												<div class="video col">
-													<div class="image fit">
-														<img src="images/pic05.jpg" alt="">
-														<div class="arrow">
-															<div class="icon fa-play"></div>
-														</div>
-													</div>
-													<a href="generic.html" class="link"><span>Click Me</span></a>
-												</div>
-											<!-- Video Thumbnail -->
-												<div class="video col">
-													<div class="image fit">
-														<img src="images/pic06.jpg" alt="">
-														<div class="arrow">
-															<div class="icon fa-play"></div>
-														</div>
-													</div>
-													<a href="generic.html" class="link"><span>Click Me</span></a>
-												</div>
-										</div>
+        .top-bar-contact i {
+            margin-right: 5px;
+        }
 
-									<!-- Tab 2 -->
-										<div class="tab tab-2 flex flex-3">
-											<!-- Video Thumbnail -->
-												<div class="video col">
-													<div class="image fit">
-														<img src="images/pic06.jpg" alt="">
-														<div class="arrow">
-															<div class="icon fa-play"></div>
-														</div>
-													</div>
-													<a href="generic.html" class="link"><span>Click Me</span></a>
-												</div>
-											<!-- Video Thumbnail -->
-												<div class="video col">
-													<div class="image fit">
-														<img src="images/pic05.jpg" alt="">
-														<div class="arrow">
-															<div class="icon fa-play"></div>
-														</div>
-													</div>
-													<a href="generic.html" class="link"><span>Click Me</span></a>
-												</div>
-											<!-- Video Thumbnail -->
-												<div class="video col">
-													<div class="image fit">
-														<img src="images/pic04.jpg" alt="">
-														<div class="arrow">
-															<div class="icon fa-play"></div>
-														</div>
-													</div>
-													<a href="generic.html" class="link"><span>Click Me</span></a>
-												</div>
-											<!-- Video Thumbnail -->
-												<div class="video col">
-													<div class="image fit">
-														<img src="images/pic03.jpg" alt="">
-														<div class="arrow">
-															<div class="icon fa-play"></div>
-														</div>
-													</div>
-													<a href="generic.html" class="link"><span>Click Me</span></a>
-												</div>
-											<!-- Video Thumbnail -->
-												<div class="video col">
-													<div class="image fit">
-														<img src="images/pic02.jpg" alt="">
-														<div class="arrow">
-															<div class="icon fa-play"></div>
-														</div>
-													</div>
-													<a href="generic.html" class="link"><span>Click Me</span></a>
-												</div>
-											<!-- Video Thumbnail -->
-												<div class="video col">
-													<div class="image fit">
-														<img src="images/pic01.jpg" alt="">
-														<div class="arrow">
-															<div class="icon fa-play"></div>
-														</div>
-													</div>
-													<a href="generic.html" class="link"><span>Click Me</span></a>
-												</div>
-										</div>
+        .top-bar-social a {
+            color: white;
+            margin-left: 15px;
+            transition: var(--transition);
+        }
 
-									<!-- Tab 3 -->
-										<div class="tab tab-3 flex flex-3">
-											<!-- Video Thumbnail -->
-												<div class="video col">
-													<div class="image fit">
-														<img src="images/pic03.jpg" alt="">
-														<div class="arrow">
-															<div class="icon fa-play"></div>
-														</div>
-													</div>
-													<a href="generic.html" class="link"><span>Click Me</span></a>
-												</div>
-											<!-- Video Thumbnail -->
-												<div class="video col">
-													<div class="image fit">
-														<img src="images/pic02.jpg" alt="">
-														<div class="arrow">
-															<div class="icon fa-play"></div>
-														</div>
-													</div>
-													<a href="generic.html" class="link"><span>Click Me</span></a>
-												</div>
-											<!-- Video Thumbnail -->
-												<div class="video col">
-													<div class="image fit">
-														<img src="images/pic01.jpg" alt="">
-														<div class="arrow">
-															<div class="icon fa-play"></div>
-														</div>
-													</div>
-													<a href="generic.html" class="link"><span>Click Me</span></a>
-												</div>
-											<!-- Video Thumbnail -->
-												<div class="video col">
-													<div class="image fit">
-														<img src="images/pic06.jpg" alt="">
-														<div class="arrow">
-															<div class="icon fa-play"></div>
-														</div>
-													</div>
-													<a href="generic.html" class="link"><span>Click Me</span></a>
-												</div>
-											<!-- Video Thumbnail -->
-												<div class="video col">
-													<div class="image fit">
-														<img src="images/pic05.jpg" alt="">
-														<div class="arrow">
-															<div class="icon fa-play"></div>
-														</div>
-													</div>
-													<a href="generic.html" class="link"><span>Click Me</span></a>
-												</div>
-											<!-- Video Thumbnail -->
-												<div class="video col">
-													<div class="image fit">
-														<img src="images/pic04.jpg" alt="">
-														<div class="arrow">
-															<div class="icon fa-play"></div>
-														</div>
-													</div>
-													<a href="generic.html" class="link"><span>Click Me</span></a>
-												</div>
-										</div>
+        .top-bar-social a:hover {
+            color: var(--accent);
+        }
 
-								</div>
-							</div>
-					</div>
-				</section>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
 
-			<!-- Three -->
-				<section class="wrapper ">
-					<div class="inner">
-						<header class="align-center">
-							<h2>Aliquam ipsum purus dolor</h2>
-							<p>Cras sagittis turpis sit amet est tempus, sit amet consectetur purus tincidunt.</p>
-						</header>
+        .logo {
+            display: flex;
+            align-items: center;
+        }
 
-						<!-- 3 Column Video Section -->
-							<div class="flex flex-3">
-								<div class="video col">
-									<div class="image fit">
-										<img src="images/pic09.jpg" alt="">
-										<div class="arrow">
-											<div class="icon fa-play"></div>
-										</div>
-									</div>
-									<p class="caption">
-										Cras eget lacus sed mauris scelerisque tincidunt
-									</p>
-									<a href="generic.html" class="link"><span>Click Me</span></a>
-								</div>
-								<div class="video col">
-									<div class="image fit">
-										<img src="images/pic10.jpg" alt="">
-										<div class="arrow">
-											<div class="icon fa-play"></div>
-										</div>
-									</div>
-									<p class="caption">
-										Vivamus vulputate lacus non massa auctor lobortis
-									</p>
-									<a href="generic.html" class="link"><span>Click Me</span></a>
-								</div>
-								<div class="video col">
-									<div class="image fit">
-										<img src="images/pic11.jpg" alt="">
-										<div class="arrow">
-											<div class="icon fa-play"></div>
-										</div>
-									</div>
-									<p class="caption">
-										Nam eu nisi non ante sodales interdum a vitae neque
-									</p>
-									<a href="generic.html" class="link"><span>Click Me</span></a>
-								</div>
-							</div>
-					</div>
-				</section>
+        .logo img {
+            height: 100px; 
+          width: auto;
+         max-width: 150px; 
+            
+        }
 
-			</div>
+        .nav-tabs {
+            display: flex;
+            list-style: none;
+            background: var(--light);
+            border-radius: 12px;
+            padding: 6px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<div class="flex flex-3">
-						<div class="col">
-							<h3>Vestibullum</h3>
-							<ul class="alt">
-								<li><a href="#">Nascetur nunc varius commodo.</a></li>
-								<li><a href="#">Vis id faucibus montes tempor</a></li>
-								<li><a href="#">Massa amet lobortis vel.</a></li>
-								<li><a href="#">Nascetur nunc varius commodo.</a></li>
-							</ul>
-						</div>
-						<div class="col">
-							<h3>Lobortis</h3>
-							<ul class="alt">
-								<li><a href="#">Nascetur nunc varius commodo.</a></li>
-								<li><a href="#">Vis id faucibus montes tempor</a></li>
-								<li><a href="#">Massa amet lobortis vel.</a></li>
-								<li><a href="#">Nascetur nunc varius commodo.</a></li>
-							</ul>
-						</div>
-						<div class="col">
-							<h3>Accumsan</h3>
-							<ul class="alt">
-								<li><a href="#">Nascetur nunc varius commodo.</a></li>
-								<li><a href="#">Vis id faucibus montes tempor</a></li>
-								<li><a href="#">Massa amet lobortis vel.</a></li>
-								<li><a href="#">Nascetur nunc varius commodo.</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="copyright">
-					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
-					</ul>
-				</div>
-			</footer>
+        .nav-tabs li {
+            margin: 0 4px;
+        }
 
-		<div class="copyright">
-			Made with: <a href="https://templated.live/">Templated.co</a> Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-		</div>
+        .nav-tabs a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            padding: 12px 24px;
+            transition: var(--transition);
+            display: block;
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        .nav-tabs a:hover {
+            background: rgba(26, 58, 95, 0.08);
+        }
 
-	</body>
+        .nav-tabs a.active {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 4px 12px rgba(26, 58, 95, 0.2);
+        }
+
+        .mobile-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary);
+        }
+
+        /* Content Area */
+        .content-area {
+            min-height: 70vh;
+            padding: 40px 0;
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 2.8rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .section-title p {
+            color: var(--gray);
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: var(--transition);
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(26, 58, 95, 0.15);
+        }
+
+        .btn:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-accent {
+            background: var(--accent);
+        }
+
+        .btn-accent:hover {
+            background: #c1121f;
+        }
+
+        /* Home Tab - Enhanced with Animations */
+        .hero {
+            background: linear-gradient(135deg, rgba(26, 58, 95, 0.85) 0%, rgba(44, 92, 138, 0.85) 100%), url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 120px 0;
+            border-radius: 20px;
+            margin-bottom: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=2048&q=80');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            line-height: 1.2;
+            animation: slideInDown 1s ease;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+            animation: slideInUp 1s ease 0.2s both;
+        }
+
+        .hero .btn {
+            animation: fadeIn 1s ease 0.4s both;
+        }
+
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .floating-shapes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .shape {
+            position: absolute;
+            opacity: 0.1;
+            animation: float 15s infinite linear;
+        }
+
+        .shape-1 {
+            width: 100px;
+            height: 100px;
+            background: var(--accent);
+            border-radius: 50%;
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .shape-2 {
+            width: 150px;
+            height: 150px;
+            background: white;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            top: 60%;
+            left: 80%;
+            animation-delay: 2s;
+        }
+
+        .shape-3 {
+            width: 80px;
+            height: 80px;
+            background: var(--accent);
+            border-radius: 20px;
+            top: 20%;
+            left: 80%;
+            animation-delay: 4s;
+        }
+
+        .shape-4 {
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%;
+            top: 70%;
+            left: 15%;
+            animation-delay: 6s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+            }
+            100% {
+                transform: translateY(0) rotate(360deg);
+            }
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-top: 60px;
+            animation: fadeIn 1s ease 0.6s both;
+        }
+
+        .stat-item {
+            text-align: center;
+            position: relative;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .feature-card:nth-child(1) { animation-delay: 0.2s; }
+        .feature-card:nth-child(2) { animation-delay: 0.4s; }
+        .feature-card:nth-child(3) { animation-delay: 0.6s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--primary);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 2rem;
+            box-shadow: 0 8px 20px rgba(26, 58, 95, 0.2);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .feature-card p {
+            color: var(--gray);
+        }
+
+        /* About Tab */
+        .about-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .about-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--primary);
+        }
+
+        .about-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-card i {
+            font-size: 2.8rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .about-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Products Tab */
+        .product-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .product-category {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            cursor: pointer;
+            position: relative;
+        }
+
+        .product-category:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-img {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            transition: var(--transition);
+        }
+
+        .product-category:hover .product-img {
+            transform: scale(1.05);
+        }
+
+        .product-content {
+            padding: 25px;
+        }
+
+        .product-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .product-detail {
+            display: none;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .product-detail.active {
+            display: block;
+        }
+
+        .back-btn {
+            margin-bottom: 30px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            color: var(--primary);
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 8px;
+            background: rgba(26, 58, 95, 0.08);
+            transition: var(--transition);
+        }
+
+        .back-btn:hover {
+            background: rgba(26, 58, 95, 0.15);
+        }
+
+        /* Product Items Grid */
+        .product-items-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .product-item {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        .product-item-img {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-item-content {
+            padding: 20px;
+        }
+
+        .product-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .product-item p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+        }
+
+        .product-price {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .quantity-btn {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: var(--light);
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .quantity-btn:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .quantity {
+            font-weight: 600;
+            min-width: 30px;
+            text-align: center;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            padding: 12px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .add-to-cart:hover {
+            background: var(--secondary);
+        }
+
+        /* Cart Styles */
+        .cart-container {
+            position: fixed;
+            top: 0;
+            right: -400px;
+            width: 380px;
+            height: 100vh;
+            background: white;
+            box-shadow: -5px 0 25px rgba(0, 0, 0, 0.1);
+            z-index: 2000;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cart-container.active {
+            right: 0;
+        }
+
+        .cart-header {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cart-header h3 {
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+
+        .close-cart {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--gray);
+        }
+
+        .cart-items {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .cart-item {
+            display: flex;
+            gap: 15px;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .cart-item-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .cart-item-details {
+            flex: 1;
+        }
+
+        .cart-item-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: var(--primary);
+        }
+
+        .cart-item-price {
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .cart-item-quantity {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cart-item-quantity button {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: var(--light);
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+
+        .remove-item {
+            color: var(--accent);
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin-left: auto;
+        }
+
+        .cart-footer {
+            padding: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .cart-total {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .checkout-btn {
+            width: 100%;
+            padding: 15px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .checkout-btn:hover {
+            background: #c1121f;
+        }
+
+        .cart-icon {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .cart-icon:hover {
+            background: var(--secondary);
+            transform: scale(1.1);
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: var(--accent);
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Services Tab */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--primary);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-icon {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 2rem;
+            box-shadow: 0 8px 20px rgba(26, 58, 95, 0.2);
+        }
+
+        .service-detail {
+            display: none;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .service-detail.active {
+            display: block;
+        }
+
+        /* Service Booking Form */
+        .service-booking {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+            margin-top: 40px;
+        }
+
+        .booking-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .booking-form .form-group {
+            margin-bottom: 0;
+        }
+
+        .booking-form .form-group:last-child {
+            grid-column: 1 / -1;
+        }
+
+        /* Why Choose Us Tab */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            flex: 0 0 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 1.8rem;
+            box-shadow: 0 8px 20px rgba(26, 58, 95, 0.2);
+        }
+
+        .feature-content h3 {
+            margin-bottom: 10px;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 1.3rem;
+        }
+
+        /* Contact Tab */
+        .contact-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-icon {
+            flex: 0 0 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 1.5rem;
+            box-shadow: 0 8px 20px rgba(26, 58, 95, 0.2);
+        }
+
+        .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 15px 20px;
+            border: 1px solid #e1e5eb;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: var(--transition);
+            background: #f8fafc;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(26, 58, 95, 0.1);
+            background: white;
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.active {
+            display: flex;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+        }
+
+        .modal-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2.5rem;
+        }
+
+        .modal h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .modal p {
+            color: var(--gray);
+            margin-bottom: 25px;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--gray);
+            transition: var(--transition);
+        }
+
+        .close-modal:hover {
+            color: var(--dark);
+        }
+
+        /* Order Confirmation Modal */
+        .order-confirmation {
+            text-align: left;
+        }
+
+        .order-items {
+            margin: 20px 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+
+        .order-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .order-total {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 80px 0 30px;
+            margin-top: 80px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--accent);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: white;
+            padding-left: 8px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .nav-tabs {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                padding: 15px;
+                border-radius: 0 0 16px 16px;
+            }
+
+            .nav-tabs.active {
+                display: flex;
+            }
+
+            .nav-tabs li {
+                width: 100%;
+                margin: 5px 0;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+
+            .stats {
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+
+            .cart-container {
+                width: 100%;
+                right: -100%;
+            }
+
+            .booking-form {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 80px 0;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+
+            .product-detail-content > div {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-contact">
+                <span><i class="fas fa-phone"></i> +1 (555) 123-4567</span>
+                <span><i class="fas fa-envelope"></i> info@jibglobal.com</span>
+            </div>
+            <div class="top-bar-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="JIB.jpg" alt="JIB Logo">
+                    </div>
+                <ul class="nav-tabs">
+                    <li><a href="#home" class="tab-link active" data-tab="home">Home</a></li>
+                    <li><a href="#about" class="tab-link" data-tab="about">About Us</a></li>
+                    <li><a href="#products" class="tab-link" data-tab="products">Product Portfolio</a></li>
+                    <li><a href="#services" class="tab-link" data-tab="services">Services Portfolio</a></li>
+                    <li><a href="#why-choose-us" class="tab-link" data-tab="why-choose-us">Why Choose Us</a></li>
+                    <li><a href="#contact" class="tab-link" data-tab="contact">Contact Us</a></li>
+                </ul>
+                <div class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Content Area -->
+    <div class="container content-area">
+        <!-- Home Tab -->
+        <div id="home" class="tab-content active">
+            <div class="hero">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                    <div class="shape shape-4"></div>
+                </div>
+                <div class="hero-content">
+                    <h1>Global Business Solutions for a Connected World</h1>
+                    <p>JIB delivers exceptional products and services across multiple industries, connecting markets and creating opportunities worldwide.</p>
+                    <a href="#" class="btn btn-accent">Explore Our Solutions</a>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">25+</div>
+                            <div class="stat-label">Countries</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-title">
+                <h2>Our Core Strengths</h2>
+                <p>Discover what makes JIB the preferred partner for businesses worldwide</p>
+            </div>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global Reach</h3>
+                    <p>With operations in over 25 countries, we offer unparalleled international reach and local market insights.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Quality Assurance</h3>
+                    <p>Rigorous quality control processes ensure that all our products and services meet the highest standards.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Partnership Approach</h3>
+                    <p>We build long-term relationships with our clients, working collaboratively to achieve mutual success.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Us Tab -->
+        <div id="about" class="tab-content">
+            <div class="section-title">
+                <h2>About JIB</h2>
+                <p>Learn about our mission, values, and what makes us the preferred partner for businesses worldwide.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Mission Statement</h3>
+                    <p>Our mission is to deliver exceptional value through innovative products and services that empower businesses to thrive in a global marketplace. We are committed to excellence, integrity, and sustainable growth.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Unique Value Proposition</h3>
+                    <p>JIB stands out through our integrated approach, combining diverse product portfolios with comprehensive service solutions. Our global network and local expertise create unmatched value for our partners.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Who We Are</h3>
+                    <p>JIB is a multinational corporation with over two decades of experience in international trade and business solutions. Our team of experts spans across 25 countries, serving diverse industries with dedication and expertise.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Portfolio Tab -->
+        <div id="products" class="tab-content">
+            <div class="section-title">
+                <h2>Product Portfolio</h2>
+                <p>Explore our diverse range of high-quality products across multiple industries.</p>
+            </div>
+            
+            <div class="product-categories">
+                <div class="product-category" data-product="foods">
+                    <div class="product-img" style="background-image: url('https://storage.googleapis.com/thisday-846548948316-wp-data/wp-media/2019/03/00f2f899-food-beverage.jpg');"></div>
+                    <div class="product-content">
+                        <h3>Foods & Beverages</h3>
+                        <p>Premium quality food products and beverages sourced from trusted suppliers worldwide.</p>
+                    </div>
+                </div>
+                <div class="product-category" data-product="fashion">
+                    <div class="product-img" style="background-image: url('https://img.freepik.com/premium-vector/cosmetics-fashion-background-with-make-up-artist-objects-lipstick-cream-brush_260787-789.jpg?w=2000');"></div>
+                    <div class="product-content">
+                        <h3>Fashion & Cosmetics</h3>
+                        <p>Trend-setting fashion items and premium cosmetics from leading global brands.</p>
+                    </div>
+                </div>
+                <div class="product-category" data-product="stationery">
+                    <div class="product-img" style="background-image: url('https://tse4.mm.bing.net/th/id/OIP.hExmgjJ3gu1IFRtw5flDwAHaEK?pid=Api&P=0&h=180');"></div>
+                    <div class="product-content">
+                        <h3>Kids Stationery</h3>
+                        <p>Creative and educational stationery products designed to inspire young minds.</p>
+                    </div>
+                </div>
+                <div class="product-category" data-product="sports">
+                    <div class="product-img" style="background-image: url('https://media.istockphoto.com/photos/sports-equipment-on-green-grass-top-view-picture-id905105146?k=6&m=905105146&s=612x612&w=0&h=odjtniuXoyUCzRDUZ2d_0eHSKKNVkaHy8Ivq6rxInZ4=');"></div>
+                    <div class="product-content">
+                        <h3>Sports Goods</h3>
+                        <p>High-performance sports equipment and apparel for professionals and enthusiasts.</p>
+                    </div>
+                </div>
+                <div class="product-category" data-product="industrial">
+                    <div class="product-img" style="background-image: url('https://tse1.mm.bing.net/th/id/OIP.Zqou_kP1KcI9uaJ84yVhTQHaD_?pid=Api&P=0&h=180');"></div>
+                    <div class="product-content">
+                        <h3>Industrial Products</h3>
+                        <p>Reliable industrial equipment and components for manufacturing and production.</p>
+                    </div>
+                </div>
+                <div class="product-category" data-product="agriculture">
+                    <div class="product-img" style="background-image: url('https://khetigaadi.com/blog/wp-content/uploads/2021/08/Agriculture-Machinery_6_11zon.jpg');"></div>
+                    <div class="product-content">
+                        <h3>Agriculture Machinery</h3>
+                        <p>Advanced agricultural machinery to enhance productivity and efficiency in farming.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Items Grid (initially hidden) -->
+            <div id="product-items" class="product-items-grid">
+                <!-- Content will be loaded dynamically -->
+            </div>
+            
+            <!-- Product Details (initially hidden) -->
+            <div id="product-detail" class="product-detail">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+
+        <!-- Services Portfolio Tab -->
+        <div id="services" class="tab-content">
+            <div class="section-title">
+                <h2>Services Portfolio</h2>
+                <p>Comprehensive business solutions tailored to meet your specific needs and challenges.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-service="plug-play">
+                    <div class="service-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>Plug & Play Services</h3>
+                    <p>Ready-to-implement business solutions that integrate seamlessly with your existing operations.</p>
+                </div>
+                <div class="service-card" data-service="logistics">
+                    <div class="service-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Logistic Services</h3>
+                    <p>End-to-end supply chain management with global reach and local expertise.</p>
+                </div>
+                <div class="service-card" data-service="maintenance">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Maintenance & Equipment Services</h3>
+                    <p>Comprehensive maintenance solutions to keep your operations running smoothly.</p>
+                </div>
+                <div class="service-card" data-service="consulting">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Consulting Services</h3>
+                    <p>Strategic business consulting to help you navigate complex market challenges.</p>
+                </div>
+            </div>
+            
+            <!-- Service Details (initially hidden) -->
+            <div id="service-detail" class="service-detail">
+                <!-- Content will be loaded dynamically -->
+            </div>
+            
+            <!-- Service Booking Form (initially hidden) -->
+            <div id="service-booking" class="service-booking">
+                <!-- Content will be loaded dynamically -->
+            </div>
+        </div>
+
+        <!-- Why Choose Us Tab -->
+        <div id="why-choose-us" class="tab-content">
+            <div class="section-title">
+                <h2>Why Choose JIB</h2>
+                <p>Discover the advantages of partnering with a global leader in business solutions.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Global Network</h3>
+                        <p>With operations in over 25 countries, we offer unparalleled international reach and local market insights.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Quality Assurance</h3>
+                        <p>Rigorous quality control processes ensure that all our products and services meet the highest standards.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Partnership Approach</h3>
+                        <p>We build long-term relationships with our clients, working collaboratively to achieve mutual success.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Innovation Focus</h3>
+                        <p>Continuous innovation drives our business, ensuring we deliver cutting-edge solutions to our clients.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Reliability</h3>
+                        <p>With over 20 years in business, we have established a reputation for reliability and trustworthiness.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>24/7 Support</h3>
+                        <p>Our dedicated support team is available around the clock to address your needs and concerns.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Us Tab -->
+        <div id="contact" class="tab-content">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with our team to discuss how we can help your business grow.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Our Headquarters</h3>
+                            <p>123 Business Avenue, Suite 500<br>New York, NY 10001, USA</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone Number</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email Address</h3>
+                            <p>info@jibglobal.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3>Business Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Icon -->
+    <div class="cart-icon" id="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+    </div>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-container" id="cart-container">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">₹0.00</span>
+            </div>
+            <button class="checkout-btn" id="place-order-btn">Place Order</button>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-icon">
+                <i class="fas fa-check"></i>
+            </div>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for contacting us. We will get back to you as soon as possible.</p>
+            <button class="btn" id="modal-ok">OK</button>
+        </div>
+    </div>
+
+    <!-- Order Confirmation Modal -->
+    <div class="modal" id="order-modal">
+        <div class="modal-content order-confirmation">
+            <button class="close-modal">&times;</button>
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Order Placed Successfully!</h3>
+            <p>Thank you for your order. Here are your order details:</p>
+            <div class="order-items" id="order-items">
+                <!-- Order items will be added here dynamically -->
+            </div>
+            <div class="order-total">
+                <span>Total Amount:</span>
+                <span id="order-total">₹0.00</span>
+            </div>
+            <p style="margin-top: 20px;">Your order will be delivered within 30-45 minutes.</p>
+            <button class="btn" id="order-ok">OK</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About JIB</h3>
+                    <p>JIB is a global business solutions provider with over 20 years of experience in international trade, product distribution, and service delivery across multiple industries.</p>
+                    <div class="top-bar-social" style="margin-top: 20px;">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="tab-link" data-tab="home">Home</a></li>
+                        <li><a href="#" class="tab-link" data-tab="about">About Us</a></li>
+                        <li><a href="#" class="tab-link" data-tab="products">Product Portfolio</a></li>
+                        <li><a href="#" class="tab-link" data-tab="services">Services Portfolio</a></li>
+                        <li><a href="#" class="tab-link" data-tab="why-choose-us">Why Choose Us</a></li>
+                        <li><a href="#" class="tab-link" data-tab="contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="service-link" data-service="plug-play">Plug & Play Services</a></li>
+                        <li><a href="#" class="service-link" data-service="logistics">Logistic Services</a></li>
+                        <li><a href="#" class="service-link" data-service="maintenance">Maintenance & Equipment</a></li>
+                        <li><a href="#" class="service-link" data-service="consulting">Consulting Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter to receive updates on our latest products and services.</p>
+                    <div class="form-group" style="margin-top: 15px;">
+                        <input type="email" class="form-control" placeholder="Your Email Address">
+                        <button class="btn" style="margin-top: 10px; width: 100%;">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 JIB Global Solutions. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tab Navigation
+        document.querySelectorAll('.tab-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Remove active class from all tabs and content
+                document.querySelectorAll('.tab-link').forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                document.querySelectorAll('.tab-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+                
+                // Add active class to clicked tab and corresponding content
+                this.classList.add('active');
+                const tabId = this.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+                
+                // Close mobile menu if open
+                document.querySelector('.nav-tabs').classList.remove('active');
+            });
+        });
+
+        // Mobile Navigation Toggle
+        document.querySelector('.mobile-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-tabs').classList.toggle('active');
+        });
+
+        // Product Data with All Categories and Products
+        const productData = {
+            foods: {
+                title: "Foods & Beverages",
+                description: "Our Foods & Beverages division offers a wide range of premium quality products sourced from trusted suppliers worldwide. We specialize in organic foods, gourmet items, and specialty beverages that cater to diverse consumer preferences.",
+                features: [
+                    "Organic and natural food products",
+                    "International gourmet specialties",
+                    "Premium coffee and tea selections",
+                    "Health-focused beverages",
+                    "Custom packaging solutions"
+                ],
+                image: "https://storage.googleapis.com/thisday-846548948316-wp-data/wp-media/2019/03/00f2f899-food-beverage.jpg",
+                items: [
+                    {
+                        id: 1,
+                        name: "Hyderabadi Biryani",
+                        description: "Fragrant basmati rice cooked with tender meat and aromatic spices",
+                        price: 320,
+                        image: "https://curlytales.com/wp-content/uploads/2022/07/Untitled-design-2022-07-25T105549.084.jpg"
+                    },
+                    {
+                        id: 2,
+                        name: "Chocolate Dessert Platter",
+                        description: "Assorted chocolate desserts including mousse, cake, and truffles",
+                        price: 280,
+                        image: "https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2018/05/01/d20f21db97274c02a78b48accd60237e_after_eight_photo_credit_%40andrewhektor_instagram.jpg"
+                    },
+                    {
+                        id: 3,
+                        name: "Gulab Jamun",
+                        description: "Soft milk dumplings soaked in rose-flavored sugar syrup",
+                        price: 120,
+                        image: "https://www.richtaste.org/wp-content/uploads/2019/10/Gulab-Jamun.jpg"
+                    },
+                    {
+                        id: 4,
+                        name: "Tropical Mocktail",
+                        description: "Refreshing blend of tropical fruits with mint and lime",
+                        price: 180,
+                        image: "https://dashofsanity.com/wp-content/uploads/2018/07/Blue-Island-Cocktail-drink-683x1024.jpg"
+                    },
+                    {
+                        id: 5,
+                        name: "Margherita Pizza",
+                        description: "Classic pizza with tomato sauce, mozzarella, and fresh basil",
+                        price: 350,
+                        image: "https://cdn.pixabay.com/photo/2020/05/17/04/22/pizza-5179939_1280.jpg"
+                    }
+                ]
+            },
+            fashion: {
+                title: "Fashion & Cosmetics",
+                description: "Our Fashion & Cosmetics portfolio features trend-setting apparel, accessories, and beauty products from leading global brands. We stay ahead of fashion trends to bring our customers the latest styles and innovations.",
+                features: [
+                    "Contemporary fashion collections",
+                    "Luxury beauty and skincare",
+                    "Sustainable fashion lines",
+                    "Seasonal trend forecasts",
+                    "Exclusive brand partnerships"
+                ],
+                image: "https://img.freepik.com/premium-vector/cosmetics-fashion-background-with-make-up-artist-objects-lipstick-cream-brush_260787-789.jpg?w=2000",
+                items: [
+                    {
+                        id: 6,
+                        name: "Lip Shades Collection",
+                        description: "Premium lipsticks in various shades and finishes",
+                        price: 899,
+                        image: "http://misslizheart.com/wp-content/uploads/2014/09/maybellinemattelipstick-1024x1024.jpg"
+                    },
+                    {
+                        id: 7,
+                        name: "Professional Makeup Kit",
+                        description: "Complete makeup kit with 50+ products",
+                        price: 2499,
+                        image: "https://www.shaadidukaan.com/vogue/wp-content/uploads/2020/03/Makeup-1.jpg"
+                    },
+                    {
+                        id: 8,
+                        name: "Premium Body Lotions",
+                        description: "Nourishing body lotions with natural ingredients",
+                        price: 599,
+                        image: "https://tse1.mm.bing.net/th/id/OIP.A2R2I3wgUKWYJariqe-8oQHaFu?pid=Api&P=0&h=180"
+                    },
+                    {
+                        id: 9,
+                        name: "Designer Lehengas",
+                        description: "Traditional Indian lehengas with intricate embroidery",
+                        price: 5999,
+                        image: "https://shoprex.com/images/srproducts/large/stitched-embroidered-shamoz-silk-party-wear-lehenga-choli-for-girls-with-embroidered-chiffon-dupatta_45891.jpg"
+                    },
+                    {
+                        id: 10,
+                        name: "Premium Jeans Collection",
+                        description: "Comfortable and stylish jeans in various fits",
+                        price: 1899,
+                        image: "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                    }
+                ]
+            },
+            stationery: {
+                title: "Kids Stationery",
+                description: "Our Kids Stationery collection combines creativity with education, offering products that inspire young minds. From colorful writing instruments to educational activity sets, we provide tools that make learning fun.",
+                features: [
+                    "Eco-friendly materials",
+                    "Educational activity sets",
+                    "Creative art supplies",
+                    "Character-themed collections",
+                    "Age-appropriate designs"
+                ],
+                image: "https://tse4.mm.bing.net/th/id/OIP.hExmgjJ3gu1IFRtw5flDwAHaEK?pid=Api&P=0&h=180",
+                items: [
+                    {
+                        id: 11,
+                        name: "Premium Pens Set",
+                        description: "Smooth-writing pens in multiple colors",
+                        price: 299,
+                        image: "https://m.media-amazon.com/images/I/81ipjiUTU1L._AC_SL1500_.jpg"
+                    },
+                    {
+                        id: 12,
+                        name: "Educational Books Pack",
+                        description: "Set of 10 educational books for children",
+                        price: 899,
+                        image: "https://images-na.ssl-images-amazon.com/images/G/01/aplusautomation/vendorimages/fddc79ee-7b83-49b2-8699-75fa60c97bd0.jpg._CB316418626_.jpg"
+                    },
+                    {
+                        id: 13,
+                        name: " Pencils Set",
+                        description: "Vibrant color pencils for creative expression",
+                        price: 199,
+                        image: "https://m.media-amazon.com/images/I/71mCWONL67L.jpg"
+                    },
+                    {
+                        id: 14,
+                        name: "Novel Books Collection",
+                        description: "Popular novels and storybooks for kids",
+                        price: 499,
+                        image: "https://images.thenile.io/r1000/9781609455057.jpg"
+                    },
+                    {
+                        id: 15,
+                        name: "School Bags",
+                        description: "Durable and stylish school bags for children",
+                        price: 1299,
+                        image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                    }
+                ]
+            },
+            sports: {
+                title: "Sports Goods",
+                description: "Our Sports Goods division offers high-performance equipment and apparel for both professionals and enthusiasts. We partner with leading sports brands to provide quality products for various athletic activities.",
+                features: [
+                    "Professional-grade equipment",
+                    "Performance athletic wear",
+                    "Outdoor and adventure gear",
+                    "Team sports supplies",
+                    "Fitness accessories"
+                ],
+                image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80",
+                items: [
+                    {
+                        id: 16,
+                        name: "Adjustable Dumbbells",
+                        description: "Professional dumbbells with weight adjustment",
+                        price: 3499,
+                        image: "http://pluspng.com/img-png/dumbbell-hd-png-dumbbells-png-transparent-image-1559.png"
+                    },
+                    {
+                        id: 17,
+                        name: "Premium Yoga Mat",
+                        description: "Non-slip yoga mat with carrying strap",
+                        price: 1299,
+                        image: "https://cdn.shopify.com/s/files/1/2330/3937/products/YM-Prana_1500x1500.jpg?v=1606247669"
+                    },
+                    {
+                        id: 18,
+                        name: "Hockey Kit",
+                        description: "Complete hockey kit with stick and protective gear",
+                        price: 4599,
+                        image: "https://2.imimg.com/data2/JX/LQ/MY-3626744/hockey-kit-500x500.jpg"
+                    },
+                    {
+                        id: 19,
+                        name: "Sports Safety Kit",
+                        description: "Essential safety equipment for sports",
+                        price: 1999,
+                        image: "https://tse3.mm.bing.net/th/id/OIP.QAOCA5u7UeuaA4k1RhNa5gHaE8?pid=Api&P=0&h=180"
+                    },
+                    {
+                        id: 20,
+                        name: "Badminton Shuttles",
+                        description: "Professional grade feather shuttles",
+                        price: 599,
+                        image: "https://images.unsplash.com/photo-1716155249759-b5f068f74e63?fm=jpg&w=3000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFkbWludG9uJTIwcmFja2V0fGVufDB8fDB8fHww"
+                    }
+                ]
+            },
+            industrial: {
+                title: "Industrial Products",
+                description: "Our Industrial Products division supplies reliable equipment and components for manufacturing and production facilities. We focus on durability, efficiency, and safety in all our industrial solutions.",
+                features: [
+                    "Heavy machinery and equipment",
+                    "Safety and protective gear",
+                    "Industrial tools and components",
+                    "Automation systems",
+                    "Maintenance supplies"
+                ],
+                image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80",
+                items: [
+                    {
+                        id: 21,
+                        name: "Safety Helmets",
+                        description: "Industrial safety helmets with chin strap",
+                        price: 899,
+                        image: "https://tse4.mm.bing.net/th/id/OIP.85YyJ2cuAA3eFS0tGKUkJgHaHk?pid=Api&P=0&h=180"
+                    },
+                    {
+                        id: 22,
+                        name: "Safety Shoes",
+                        description: "Steel-toe industrial safety shoes",
+                        price: 2499,
+                        image: "https://img.freepik.com/premium-photo/pair-shoes-different-colors-joined-together_380747-753.jpg"
+                    },
+                    {
+                        id: 23,
+                        name: "Food Processing Machinery",
+                        description: "Industrial food processing equipment",
+                        price: 89999,
+                        image: "https://tse3.mm.bing.net/th/id/OIP.AZ47oG8ptlWlfQDUXPpJFQHaHa?pid=Api&P=0&h=180"
+                    },
+                    {
+                        id: 24,
+                        name: "Strapping Machine",
+                        description: "Automatic strapping machine for packaging",
+                        price: 45999,
+                        image: "https://image.vevor.com/us/DBJB25QDKZJ000001V0/source-img/pneumatic-strapping-machine-f1.jpg"
+                    }
+                ]
+            },
+            agriculture: {
+                title: "Agriculture Machinery",
+                description: "Our Agriculture Machinery division provides advanced equipment to enhance productivity and efficiency in farming operations. From small-scale tools to large agricultural machinery, we support modern farming practices.",
+                features: [
+                    "Tractors and harvesters",
+                    "Irrigation systems",
+                    "Precision farming tools",
+                    "Livestock equipment",
+                    "Post-harvest technology"
+                ],
+                image: "https://khetigaadi.com/blog/wp-content/uploads/2021/08/Agriculture-Machinery_6_11zon.jpg",
+                items: [
+                    {
+                        id: 25,
+                        name: "Farm Tractors",
+                        description: "Heavy-duty agricultural tractors",
+                        price: 899999,
+                        image: "https://tse1.mm.bing.net/th/id/OIP.shXc4UftQPCL2ng8WM0oEgHaFj?pid=Api&P=0&h=180"
+                    },
+                    {
+                        id: 26,
+                        name: "Combine Harvester",
+                        description: "Advanced combine harvester machine",
+                        price: 2499999,
+                        image: "https://tse1.mm.bing.net/th/id/OIP.a3G0yburXKnVLX3bnfbNgQHaDt?pid=Api&P=0&h=180"
+                    },
+                    {
+                        id: 27,
+                        name: "Fertilizer Applicator",
+                        description: "Precision fertilizer application equipment",
+                        price: 189999,
+                        image: "https://tse2.mm.bing.net/th/id/OIP.iqgHWMvJ4Hx4woMpYnWDDAHaFy?pid=Api&P=0&h=180"
+                    },
+                    {
+                        id: 28,
+                        name: "Hedge Trimmers",
+                        description: "Professional hedge trimming equipment",
+                        price: 15999,
+                        image: "https://tse2.mm.bing.net/th/id/OIP.cyk04oMwf0-hurkfHoaobwHaHa?pid=Api&P=0&h=180"
+                    }
+                ]
+            }
+        };
+
+        // Shopping Cart Functionality
+        let cart = [];
+        const cartIcon = document.getElementById('cart-icon');
+        const cartContainer = document.getElementById('cart-container');
+        const cartItems = document.getElementById('cart-items');
+        const cartTotal = document.getElementById('cart-total');
+        const cartCount = document.querySelector('.cart-count');
+        const placeOrderBtn = document.getElementById('place-order-btn');
+
+        // Toggle Cart
+        cartIcon.addEventListener('click', () => {
+            cartContainer.classList.toggle('active');
+        });
+
+        document.querySelector('.close-cart').addEventListener('click', () => {
+            cartContainer.classList.remove('active');
+        });
+
+        // Update Cart
+        function updateCart() {
+            cartItems.innerHTML = '';
+            let total = 0;
+            let count = 0;
+
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<p style="text-align: center; color: var(--gray); padding: 20px;">Your cart is empty</p>';
+            } else {
+                cart.forEach(item => {
+                    const itemTotal = item.price * item.quantity;
+                    total += itemTotal;
+                    count += item.quantity;
+
+                    const cartItem = document.createElement('div');
+                    cartItem.className = 'cart-item';
+                    cartItem.innerHTML = `
+                        <div class="cart-item-img" style="background-image: url('${item.image}')"></div>
+                        <div class="cart-item-details">
+                            <div class="cart-item-name">${item.name}</div>
+                            <div class="cart-item-price">₹${item.price.toFixed(2)}</div>
+                            <div class="cart-item-quantity">
+                                <button class="decrease-quantity" data-id="${item.id}">-</button>
+                                <span>${item.quantity}</span>
+                                <button class="increase-quantity" data-id="${item.id}">+</button>
+                            </div>
+                        </div>
+                        <button class="remove-item" data-id="${item.id}">&times;</button>
+                    `;
+                    cartItems.appendChild(cartItem);
+                });
+            }
+
+            cartTotal.textContent = `₹${total.toFixed(2)}`;
+            cartCount.textContent = count;
+
+            // Add event listeners to cart buttons
+            document.querySelectorAll('.decrease-quantity').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const id = parseInt(e.target.getAttribute('data-id'));
+                    decreaseQuantity(id);
+                });
+            });
+
+            document.querySelectorAll('.increase-quantity').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const id = parseInt(e.target.getAttribute('data-id'));
+                    increaseQuantity(id);
+                });
+            });
+
+            document.querySelectorAll('.remove-item').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const id = parseInt(e.target.getAttribute('data-id'));
+                    removeFromCart(id);
+                });
+            });
+        }
+
+        function addToCart(product) {
+            const existingItem = cart.find(item => item.id === product.id);
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({ ...product, quantity: 1 });
+            }
+            updateCart();
+            showNotification(`${product.name} added to cart!`);
+        }
+
+        function increaseQuantity(id) {
+            const item = cart.find(item => item.id === id);
+            if (item) {
+                item.quantity += 1;
+                updateCart();
+            }
+        }
+
+        function decreaseQuantity(id) {
+            const item = cart.find(item => item.id === id);
+            if (item && item.quantity > 1) {
+                item.quantity -= 1;
+                updateCart();
+            } else {
+                removeFromCart(id);
+            }
+        }
+
+        function removeFromCart(id) {
+            cart = cart.filter(item => item.id !== id);
+            updateCart();
+        }
+
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.textContent = message;
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: var(--primary);
+                color: white;
+                padding: 15px 25px;
+                border-radius: 8px;
+                z-index: 3000;
+                animation: slideInRight 0.3s ease;
+            `;
+            document.body.appendChild(notification);
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+
+        // Place Order Functionality
+        placeOrderBtn.addEventListener('click', () => {
+            if (cart.length === 0) {
+                showNotification('Your cart is empty!');
+                return;
+            }
+
+            const orderModal = document.getElementById('order-modal');
+            const orderItems = document.getElementById('order-items');
+            const orderTotal = document.getElementById('order-total');
+            
+            orderItems.innerHTML = '';
+            let total = 0;
+            
+            cart.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+                
+                const orderItem = document.createElement('div');
+                orderItem.className = 'order-item';
+                orderItem.innerHTML = `
+                    <span>${item.name} x ${item.quantity}</span>
+                    <span>₹${itemTotal.toFixed(2)}</span>
+                `;
+                orderItems.appendChild(orderItem);
+            });
+            
+            orderTotal.textContent = `₹${total.toFixed(2)}`;
+            orderModal.classList.add('active');
+            
+            // Clear cart after order
+            cart = [];
+            updateCart();
+            cartContainer.classList.remove('active');
+        });
+
+        // Close order modal
+        document.getElementById('order-ok').addEventListener('click', () => {
+            document.getElementById('order-modal').classList.remove('active');
+        });
+
+        // Product Category Click Handler
+        document.querySelectorAll('.product-category').forEach(category => {
+            category.addEventListener('click', function() {
+                const productId = this.getAttribute('data-product');
+                const product = productData[productId];
+                
+                if (product) {
+                    const productItems = document.getElementById('product-items');
+                    const productList = document.querySelector('.product-categories');
+                    
+                    // Hide product list and show items
+                    productList.style.display = 'none';
+                    productItems.style.display = 'grid';
+                    
+                    // Populate product items
+                    productItems.innerHTML = `
+                        <div class="back-btn" id="back-to-categories">
+                            <i class="fas fa-arrow-left"></i> Back to Categories
+                        </div>
+                        <h2 style="grid-column: 1 / -1; text-align: center; margin-bottom: 20px; color: var(--primary);">${product.title}</h2>
+                        ${product.items.map(item => `
+                            <div class="product-item">
+                                <div class="product-item-img" style="background-image: url('${item.image}')"></div>
+                                <div class="product-item-content">
+                                    <h4>${item.name}</h4>
+                                    <p>${item.description}</p>
+                                    <div class="product-price">₹${item.price.toFixed(2)}</div>
+                                    <div class="quantity-controls">
+                                        <button class="quantity-btn decrease" data-id="${item.id}">-</button>
+                                        <span class="quantity" data-id="${item.id}">1</span>
+                                        <button class="quantity-btn increase" data-id="${item.id}">+</button>
+                                    </div>
+                                    <button class="add-to-cart" data-product='${JSON.stringify(item)}'>Add to Cart</button>
+                                </div>
+                            </div>
+                        `).join('')}
+                    `;
+                    
+                    // Add event listeners to back button
+                    document.getElementById('back-to-categories').addEventListener('click', function() {
+                        productItems.style.display = 'none';
+                        productList.style.display = 'grid';
+                    });
+
+                    // Add event listeners to quantity buttons
+                    document.querySelectorAll('.quantity-btn').forEach(btn => {
+                        btn.addEventListener('click', function() {
+                            const id = this.getAttribute('data-id');
+                            const quantityElement = document.querySelector(`.quantity[data-id="${id}"]`);
+                            let quantity = parseInt(quantityElement.textContent);
+                            
+                            if (this.classList.contains('increase')) {
+                                quantity++;
+                            } else if (this.classList.contains('decrease') && quantity > 1) {
+                                quantity--;
+                            }
+                            
+                            quantityElement.textContent = quantity;
+                        });
+                    });
+
+                    // Add event listeners to add to cart buttons
+                    document.querySelectorAll('.add-to-cart').forEach(btn => {
+                        btn.addEventListener('click', function() {
+                            const product = JSON.parse(this.getAttribute('data-product'));
+                            const quantity = parseInt(document.querySelector(`.quantity[data-id="${product.id}"]`).textContent);
+                            
+                            for (let i = 0; i < quantity; i++) {
+                                addToCart(product);
+                            }
+                            
+                            // Reset quantity to 1 after adding to cart
+                            document.querySelector(`.quantity[data-id="${product.id}"]`).textContent = '1';
+                        });
+                    });
+                }
+            });
+        });
+
+        // Service Details
+        const serviceDetails = {
+            "plug-play": {
+                title: "Plug & Play Services",
+                description: "Our Plug & Play Services provide ready-to-implement business solutions that integrate seamlessly with your existing operations. We offer pre-configured systems and processes that can be quickly deployed to enhance your business efficiency.",
+                features: [
+                    "Pre-configured business systems",
+                    "Quick deployment and implementation",
+                    "Minimal disruption to existing operations",
+                    "Customizable to specific business needs",
+                    "Comprehensive training and support"
+                ],
+                benefits: [
+                    "Reduced implementation time by up to 70%",
+                    "Lower total cost of ownership",
+                    "Increased operational efficiency",
+                    "Scalable solutions that grow with your business"
+                ]
+            },
+            "logistics": {
+                title: "Logistic Services",
+                description: "Our comprehensive Logistic Services provide end-to-end supply chain management with global reach and local expertise. We optimize your logistics operations to reduce costs and improve delivery times.",
+                features: [
+                    "Global freight and transportation",
+                    "Warehousing and inventory management",
+                    "Customs clearance and documentation",
+                    "Last-mile delivery solutions",
+                    "Real-time tracking and visibility"
+                ],
+                benefits: [
+                    "Reduced shipping costs by 15-25%",
+                    "Improved delivery reliability",
+                    "Enhanced supply chain visibility",
+                    "Streamlined customs processes"
+                ]
+            },
+            "maintenance": {
+                title: "Maintenance & Equipment Services",
+                description: "Our Maintenance & Equipment Services ensure your operations run smoothly with minimal downtime. We provide comprehensive maintenance solutions for all types of industrial and commercial equipment.",
+                features: [
+                    "Preventive and predictive maintenance",
+                    "24/7 emergency repair services",
+                    "Equipment calibration and optimization",
+                    "Spare parts management",
+                    "Technical training for your staff"
+                ],
+                benefits: [
+                    "Reduced equipment downtime by up to 40%",
+                    "Extended equipment lifespan",
+                    "Lower maintenance costs",
+                    "Improved operational safety"
+                ]
+            },
+            "consulting": {
+                title: "Consulting Services",
+                description: "Our Consulting Services provide strategic guidance to help you navigate complex market challenges and optimize your business operations. Our experienced consultants deliver actionable insights and solutions.",
+                features: [
+                    "Business process optimization",
+                    "Market entry strategy development",
+                    "Digital transformation consulting",
+                    "Supply chain optimization",
+                    "Performance benchmarking"
+                ],
+                benefits: [
+                    "Identified cost savings opportunities",
+                    "Improved operational efficiency",
+                    "Enhanced competitive positioning",
+                    "Data-driven decision making"
+                ]
+            }
+        };
+
+        // Service Card Click Handler
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const serviceId = this.getAttribute('data-service');
+                const service = serviceDetails[serviceId];
+                
+                if (service) {
+                    const serviceDetail = document.getElementById('service-detail');
+                    const serviceGrid = document.querySelector('.services-grid');
+                    const serviceBooking = document.getElementById('service-booking');
+                    
+                    // Hide service grid and show detail
+                    serviceGrid.style.display = 'none';
+                    serviceDetail.classList.add('active');
+                    serviceBooking.style.display = 'block';
+                    
+                    // Populate service detail
+                    serviceDetail.innerHTML = `
+                        <div class="back-btn" id="back-to-services">
+                            <i class="fas fa-arrow-left"></i> Back to Services
+                        </div>
+                        <div class="service-detail-content">
+                            <div class="section-title">
+                                <h2>${service.title}</h2>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+                                <div>
+                                    <h3 style="margin-bottom: 20px; color: var(--primary); font-size: 1.5rem;">Service Overview</h3>
+                                    <p style="margin-bottom: 25px; font-size: 1.1rem;">${service.description}</p>
+                                    <h3 style="margin-bottom: 15px; color: var(--primary); font-size: 1.3rem;">Key Features</h3>
+                                    <ul style="list-style-type: none; padding-left: 0; margin-bottom: 30px;">
+                                        ${service.features.map(feature => `<li style="margin-bottom: 12px; padding-left: 25px; position: relative; font-size: 1.05rem;">
+                                            <i class="fas fa-check" style="color: var(--accent); position: absolute; left: 0; top: 5px;"></i> ${feature}
+                                        </li>`).join('')}
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 style="margin-bottom: 15px; color: var(--primary); font-size: 1.3rem;">Key Benefits</h3>
+                                    <ul style="list-style-type: none; padding-left: 0;">
+                                        ${service.benefits.map(benefit => `<li style="margin-bottom: 12px; padding-left: 25px; position: relative; font-size: 1.05rem;">
+                                            <i class="fas fa-star" style="color: var(--accent); position: absolute; left: 0; top: 5px;"></i> ${benefit}
+                                        </li>`).join('')}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    
+                    // Populate service booking form
+                    serviceBooking.innerHTML = `
+                        <h3 style="margin-bottom: 20px; color: var(--primary);">Book ${service.title}</h3>
+                        <form class="booking-form" id="booking-form">
+                            <div class="form-group">
+                                <label for="booking-name">Full Name</label>
+                                <input type="text" id="booking-name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-email">Email Address</label>
+                                <input type="email" id="booking-email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-phone">Phone Number</label>
+                                <input type="tel" id="booking-phone" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-company">Company Name</label>
+                                <input type="text" id="booking-company" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-date">Preferred Date</label>
+                                <input type="date" id="booking-date" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="booking-message">Additional Requirements</label>
+                                <textarea id="booking-message" class="form-control" rows="4"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-accent">Book Service</button>
+                            </div>
+                        </form>
+                    `;
+                    
+                    // Add event listener to back button
+                    document.getElementById('back-to-services').addEventListener('click', function() {
+                        serviceDetail.classList.remove('active');
+                        serviceBooking.style.display = 'none';
+                        serviceGrid.style.display = 'grid';
+                    });
+
+                    // Add event listener to booking form
+                    document.getElementById('booking-form').addEventListener('submit', function(e) {
+                        e.preventDefault();
+                        document.getElementById('success-modal').classList.add('active');
+                        this.reset();
+                    });
+                }
+            });
+        });
+
+        // Contact Form Submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // In a real application, you would send the form data to a server here
+            // For demonstration, we'll just show the success modal
+            
+            // Show success modal
+            document.getElementById('success-modal').classList.add('active');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Modal Close Handlers
+        document.querySelectorAll('.close-modal').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.getElementById('success-modal').classList.remove('active');
+                document.getElementById('order-modal').classList.remove('active');
+            });
+        });
+
+        document.getElementById('modal-ok').addEventListener('click', function() {
+            document.getElementById('success-modal').classList.remove('active');
+        });
+
+        // Close modal when clicking outside
+        document.getElementById('success-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.remove('active');
+            }
+        });
+
+        document.getElementById('order-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.remove('active');
+            }
+        });
+
+        // Service links in footer
+        document.querySelectorAll('.service-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const serviceId = this.getAttribute('data-service');
+                
+                // Switch to services tab
+                document.querySelectorAll('.tab-link').forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                document.querySelectorAll('.tab-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+                
+                document.querySelector('.tab-link[data-tab="services"]').classList.add('active');
+                document.getElementById('services').classList.add('active');
+                
+                // Trigger service detail view
+                const serviceCard = document.querySelector(`.service-card[data-service="${serviceId}"]`);
+                if (serviceCard) {
+                    serviceCard.click();
+                }
+            });
+        });
+    </script>
+</body>
 </html>
